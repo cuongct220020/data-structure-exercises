@@ -1,0 +1,11 @@
+int a;
+int c;
+void foo() {
+    int b;
+    if (a > 0) {
+        int b;
+        printf("%d", b);
+    }
+
+    printf("%d", c);
+}
