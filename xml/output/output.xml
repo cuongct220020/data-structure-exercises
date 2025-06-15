@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library location="Hanoi">
+    <book id="b002">
+        <title lang="en">C Programming</title>
+        <author>Nguyen Van A</author>
+    </book>
+</library>

@@ -1,0 +1,3 @@
+/Users/cuongct090_04/Code/IT3011-Kỳ 2024.2/other project/xml/build/CMakeFiles/xml_parse.dir
+/Users/cuongct090_04/Code/IT3011-Kỳ 2024.2/other project/xml/build/CMakeFiles/edit_cache.dir
+/Users/cuongct090_04/Code/IT3011-Kỳ 2024.2/other project/xml/build/CMakeFiles/rebuild_cache.dir

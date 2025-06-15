@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    <book>
+        <title>Introduction to XML</title>
+        <author>Rahul Gupta</author>
+        <price>199.99</price>
+    </book>
+    <book>
+        <title>Advanced XML Techniques</title>
+        <author>Vipul Bansal</author>
+        <price>279.99</price>
+    </book>
+</bookstore>
+
