@@ -1,0 +1,27 @@
+? create_order
+NV012 01 2025-03-29 12:15:07
+NV012 02 2025-03-29 12:15:07
+#
+
+? add_dish
+NV012 01 MA01 "Bún ngan" 2 35000 ""
+NV012 01 MA02 "Bún bò" 1 40000 "chin tai"
+NV012 02 MA01 "Bún ngan" 35000 2 ""
+NV012 01 MA03 "Mì xào" 1 45000 ""
+#
+
+? update_dish
+NV007 01 MA01 "Bun ngan" 2
+NV007 01 MA02 "Bun bo" 1
+#
+
+? cancel_dish
+NV007 01 MA01 "Bun ngan" "đổi món"
+#
+
+? print_order 02
+#
+
+? create_bill
+NV007 01
+#

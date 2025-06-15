@@ -1,0 +1,63 @@
+? create_order
+NV012 01 2025-03-29 12:15:07
+NV012 02 2025-03-29 12:15:07
+NV015 03 2025-03-29 12:16:10
+NV018 04 2025-03-29 12:16:45
+#
+
+? add_dish
+NV012 01 MA01 "Bun ngan" 2 30000 ""
+NV012 01 MA02 "Bun bo" 1 40000 "chin tai"
+NV012 02 MA01 "Bun ngan" 2 40000 ""
+NV012 01 MA04 "Mi xao" 1 45000 ""
+NV015 03 MA05 "Pho bo" 1 35000 "tai nam"
+NV015 03 MA06 "Com rang" 1 35000 "tom"
+NV018 04 MA07 "Hu tieu" 2 35000 "khong hanh"
+NV018 04 MA08 "Lau hai san" 1 100000 ""
+#
+
+? update_dish
+NV012 01 MA02 "Bun bo" 3
+NV012 02 MA01 "Bun ngan" 3
+NV015 03 MA06 "Com rang" 3
+#
+
+? cancel_dish
+NV012 01 MA02 "Bun bo" "doi mon"
+NV018 04 MA07 "Hu tieu" "het mon"
+#
+
+? print_order 01
+#
+
+? create_order
+NV020 05 2025-03-29 12:20:10
+#
+
+? add_dish
+NV020 05 MA09 "Banh cuon" 2 20000 ""
+NV020 05 MA10 "Xoi xeo" 1 10000 "them hanh"
+#
+
+? update_dish
+NV020 05 MA09 "Banh cuon" 1
+#
+
+? cancel_dish
+NV020 05 MA10 "Xoi xeo" "khach khong an"
+#
+
+? print_order 03
+#
+
+? print_order 05
+#
+
+? create_bill
+NV012 01
+NV012 02
+NV015 03
+NV012 04
+NV020 05
+#
+

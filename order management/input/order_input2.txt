@@ -1,0 +1,78 @@
+? create_order
+NV012 01 2025-03-29 12:15:07
+NV012 02 2025-03-29 12:15:07
+NV015 03 2025-03-29 12:16:10
+NV018 04 2025-03-29 12:16:45
+#
+
+? add_dish
+NV012 01 MA01 "Bun ngan" 2 30000 ""
+NV012 01 MA02 "Bun bo" 1 40000 "chin tai"
+NV012 02 MA03 "Bun ngan" 2 40000 ""
+NV012 01 MA04 "Mi xao" 1 45000 ""
+NV012 01 MA05 "Nem ran" 3 25000 "nuoc mam"
+NV012 02 MA06 "Banh cuon" 2 20000 "them hanh"
+NV012 02 MA07 "Pho ga" 1 35000 "them trung"
+#
+
+? update_dish
+NV012 01 MA02 "Bun bo" 2
+NV012 02 MA03 "Bun ngan" 3
+#
+
+? add_dish
+NV015 03 MA08 "Pho bo" 1 35000 "tai nam"
+NV015 03 MA09 "Com rang" 1 35000 "tom"
+NV015 03 MA10 "Lau bo" 2 120000 "them sa"
+NV015 03 MA11 "Banh da cua" 2 40000 "nuoc ngot"
+NV018 04 MA12 "Hu tieu" 2 35000 "khong hanh"
+NV018 04 MA13 "Lau hai san" 1 100000 ""
+NV018 04 MA14 "Bun dau" 3 30000 "mam tom"
+#
+
+? update_dish
+NV015 03 MA09 "Com rang" 2
+NV018 04 MA13 "Lau hai san" 2
+NV018 04 MA14 "Bun dau" 4
+#
+
+? cancel_dish
+NV012 01 MA02 "Bun bo" "doi mon"
+NV018 04 MA12 "Hu tieu" "het mon"
+#
+
+? print_order 03
+#
+
+? create_order
+NV020 05 2025-03-29 12:20:10
+#
+
+? add_dish
+NV020 05 MA15 "Banh cuon" 2 20000 ""
+NV020 05 MA16 "Xoi xeo" 1 10000 "them hanh"
+NV020 05 MA17 "Bun cha" 2 35000 ""
+NV020 05 MA18 "Cha ca" 1 40000 "them rau"
+NV020 05 MA19 "Lau ech" 1 120000 ""
+#
+
+? update_dish
+NV020 05 MA15 "Banh cuon" 3
+NV020 05 MA16 "Xoi xeo" 2
+NV020 05 MA19 "Lau ech" 2
+#
+
+? cancel_dish
+NV020 05 MA16 "Xoi xeo" "khach khong an"
+#
+
+? print_order 05
+#
+
+? create_bill
+NV012 01
+NV015 02
+NV015 03
+NV012 04
+NV020 05
+#
