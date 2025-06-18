@@ -4,7 +4,7 @@
 # compile C with /Library/Developer/CommandLineTools/usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I"/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/include"
+C_INCLUDES = -I"/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/dynamic memory management/include"
 
 C_FLAGSarm64 =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk
 

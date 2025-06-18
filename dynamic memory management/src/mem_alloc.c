@@ -296,6 +296,7 @@ void *allocate_at_address(MemoryManagement *manager, void *start_addr_request, s
     return NULL;
 }
 
+// Chiến lược cấp phát bộ nhớ Best Fit
 void *bestfit_malloc(MemoryManagement *manager, size_t size, FILE *out) {
     if (manager == NULL) {
         fprintf(out, "[bestfit_malloc] Lỗi: Con trỏ manager là NULL.\n");

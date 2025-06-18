@@ -44,7 +44,7 @@ void *worstfit_malloc(MemoryManagement *manager, size_t size, FILE *out); // Wor
 void *nextfit_malloc(MemoryManagement *manager, size_t size, FILE *out); // Next Fit
 
 // Hàm giải phóng
-void free_mem(MemoryManagement *manager, void *ptr, size_t size, FILE *out); // Thay đổi tham số để thực tế hơn
+void free_mem(MemoryManagement *manager, void *ptr, size_t size, FILE *out);
 
 #endif
 

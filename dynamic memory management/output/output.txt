@@ -1,298 +1,511 @@
-[initialize_memory_manager] Vùng trống ban đầu (initial memory pool) có địa chỉ cơ sở: 0x153808800, kích thước: 1024.
+[initialize_memory_manager] Vùng trống ban đầu (initial memory pool) có địa chỉ cơ sở: 0x151008200, kích thước: 1024.
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 0 bytes
-Block 0: Start Addr: 0x153808800, Size: 1024 bytes
+Block 0: Start Addr: 0x151008200, Size: 1024 bytes
 ==============================================================
 
 
 === Bắt đầu tạo phân mảnh ban đầu bằng allocate_at_address ===
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x153808800, kích thước 50.
-[allocate_at_address] Đã thực hiện cấp phát 50 bytes tại địa chỉ 0x153808800.
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x151008200, kích thước 50.
+[allocate_at_address] Đã thực hiện cấp phát 50 bytes tại địa chỉ 0x151008200.
 
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x153808864, kích thước 100.
-[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x153808864.
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x151008264, kích thước 100.
+[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x151008264.
 
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x15380892c, kích thước 100.
-[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x15380892c.
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x15100832c, kích thước 100.
+[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x15100832c.
 
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1538089f4, kích thước 100.
-[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x1538089f4.
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1510083f4, kích thước 100.
+[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x1510083f4.
 
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x153808abc, kích thước 100.
-[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x153808abc.
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1510084bc, kích thước 100.
+[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x1510084bc.
 
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 450 bytes
-Block 0: Start Addr: 0x153808832, Size: 50 bytes
-Block 1: Start Addr: 0x1538088c8, Size: 100 bytes
-Block 2: Start Addr: 0x153808990, Size: 100 bytes
-Block 3: Start Addr: 0x153808a58, Size: 100 bytes
-Block 4: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008232, Size: 50 bytes
+Block 1: Start Addr: 0x1510082c8, Size: 100 bytes
+Block 2: Start Addr: 0x151008390, Size: 100 bytes
+Block 3: Start Addr: 0x151008458, Size: 100 bytes
+Block 4: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
 
 === Giải phóng một số khối để tạo thêm phân mảnh và gộp ===
 
-[free_mem] Thực hiện giải 50 bytes tại địa chỉ 0x153808800.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x153808800, kích thước 50. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x153808800 (kích thước 100) với khối tại 0x0.
-[free_mem] Đã giải phóng 50 bytes tại địa chỉ 0x153808800.
+[free_mem] Thực hiện giải 50 bytes tại địa chỉ 0x151008200.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x151008200, kích thước 50. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x151008200 (kích thước 100) với khối tại 0x0.
+[free_mem] Đã giải phóng 50 bytes tại địa chỉ 0x151008200.
 
-[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x15380892c.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x15380892c, kích thước 100. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x1538088c8 (kích thước 200) với khối tại 0x0.
-[merge_free_blocks] Đã gộp khối tại 0x1538088c8 (kích thước 300) với khối tại 0x0.
-[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x15380892c.
+[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x15100832c.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x15100832c, kích thước 100. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x1510082c8 (kích thước 200) với khối tại 0x0.
+[merge_free_blocks] Đã gộp khối tại 0x1510082c8 (kích thước 300) với khối tại 0x0.
+[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x15100832c.
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 300 bytes
-Block 0: Start Addr: 0x153808800, Size: 100 bytes
-Block 1: Start Addr: 0x1538088c8, Size: 300 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008200, Size: 100 bytes
+Block 1: Start Addr: 0x1510082c8, Size: 300 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
 
 === Test First Fit ===
-[firstfit_malloc] Cấp phát 80 bytes tại địa chỉ 0x153808800 (split, còn lại 20 bytes tại 0x153808850).
+[firstfit_malloc] Cấp phát 80 bytes tại địa chỉ 0x151008200 (split, còn lại 20 bytes tại 0x151008250).
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 380 bytes
-Block 0: Start Addr: 0x153808850, Size: 20 bytes
-Block 1: Start Addr: 0x1538088c8, Size: 300 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008250, Size: 20 bytes
+Block 1: Start Addr: 0x1510082c8, Size: 300 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
-[firstfit_malloc] Cấp phát 150 bytes tại địa chỉ 0x1538088c8 (split, còn lại 150 bytes tại 0x15380895e).
+[firstfit_malloc] Cấp phát 150 bytes tại địa chỉ 0x1510082c8 (split, còn lại 150 bytes tại 0x15100835e).
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 530 bytes
-Block 0: Start Addr: 0x153808850, Size: 20 bytes
-Block 1: Start Addr: 0x15380895e, Size: 150 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008250, Size: 20 bytes
+Block 1: Start Addr: 0x15100835e, Size: 150 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
 
 --- Giải phóng các khối FF để reset trạng thái cho test tiếp theo ---
 
-[free_mem] Thực hiện giải 80 bytes tại địa chỉ 0x153808800.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x153808800, kích thước 80. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x153808800 (kích thước 100) với khối tại 0x0.
-[free_mem] Đã giải phóng 80 bytes tại địa chỉ 0x153808800.
+[free_mem] Thực hiện giải 80 bytes tại địa chỉ 0x151008200.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x151008200, kích thước 80. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x151008200 (kích thước 100) với khối tại 0x0.
+[free_mem] Đã giải phóng 80 bytes tại địa chỉ 0x151008200.
 
-[free_mem] Thực hiện giải 150 bytes tại địa chỉ 0x1538088c8.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1538088c8, kích thước 150. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x1538088c8 (kích thước 300) với khối tại 0x0.
-[free_mem] Đã giải phóng 150 bytes tại địa chỉ 0x1538088c8.
+[free_mem] Thực hiện giải 150 bytes tại địa chỉ 0x1510082c8.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1510082c8, kích thước 150. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x1510082c8 (kích thước 300) với khối tại 0x0.
+[free_mem] Đã giải phóng 150 bytes tại địa chỉ 0x1510082c8.
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 300 bytes
-Block 0: Start Addr: 0x153808800, Size: 100 bytes
-Block 1: Start Addr: 0x1538088c8, Size: 300 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008200, Size: 100 bytes
+Block 1: Start Addr: 0x1510082c8, Size: 300 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
 
 === Test Best Fit ===
-[bestfit_malloc] Tìm thấy khối phù hợp nhất tại 0x153808800 (kích thước 100).
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x153808800, kích thước 90.
-[allocate_at_address] Đã thực hiện cấp phát 90 bytes tại địa chỉ 0x153808800.
+[bestfit_malloc] Tìm thấy khối phù hợp nhất tại 0x151008200 (kích thước 100).
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x151008200, kích thước 90.
+[allocate_at_address] Đã thực hiện cấp phát 90 bytes tại địa chỉ 0x151008200.
 
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 390 bytes
-Block 0: Start Addr: 0x15380885a, Size: 10 bytes
-Block 1: Start Addr: 0x1538088c8, Size: 300 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x15100825a, Size: 10 bytes
+Block 1: Start Addr: 0x1510082c8, Size: 300 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
-[bestfit_malloc] Tìm thấy khối phù hợp nhất tại 0x153808b20 (kích thước 224).
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x153808b20, kích thước 180.
-[allocate_at_address] Đã thực hiện cấp phát 180 bytes tại địa chỉ 0x153808b20.
+[bestfit_malloc] Tìm thấy khối phù hợp nhất tại 0x151008520 (kích thước 224).
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x151008520, kích thước 180.
+[allocate_at_address] Đã thực hiện cấp phát 180 bytes tại địa chỉ 0x151008520.
 
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 570 bytes
-Block 0: Start Addr: 0x15380885a, Size: 10 bytes
-Block 1: Start Addr: 0x1538088c8, Size: 300 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808bd4, Size: 44 bytes
+Block 0: Start Addr: 0x15100825a, Size: 10 bytes
+Block 1: Start Addr: 0x1510082c8, Size: 300 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x1510085d4, Size: 44 bytes
 ==============================================================
 
 
 --- Giải phóng các khối BF để reset trạng thái cho test tiếp theo ---
 
-[free_mem] Thực hiện giải 90 bytes tại địa chỉ 0x153808800.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x153808800, kích thước 90. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x153808800 (kích thước 100) với khối tại 0x0.
-[free_mem] Đã giải phóng 90 bytes tại địa chỉ 0x153808800.
+[free_mem] Thực hiện giải 90 bytes tại địa chỉ 0x151008200.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x151008200, kích thước 90. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x151008200 (kích thước 100) với khối tại 0x0.
+[free_mem] Đã giải phóng 90 bytes tại địa chỉ 0x151008200.
 
-[free_mem] Thực hiện giải 180 bytes tại địa chỉ 0x153808b20.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x153808b20, kích thước 180. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x153808b20 (kích thước 224) với khối tại 0x0.
-[free_mem] Đã giải phóng 180 bytes tại địa chỉ 0x153808b20.
+[free_mem] Thực hiện giải 180 bytes tại địa chỉ 0x151008520.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x151008520, kích thước 180. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x151008520 (kích thước 224) với khối tại 0x0.
+[free_mem] Đã giải phóng 180 bytes tại địa chỉ 0x151008520.
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 300 bytes
-Block 0: Start Addr: 0x153808800, Size: 100 bytes
-Block 1: Start Addr: 0x1538088c8, Size: 300 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008200, Size: 100 bytes
+Block 1: Start Addr: 0x1510082c8, Size: 300 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
 
 === Test Worst Fit ===
-[worstfit_malloc] Tìm thấy khối tệ nhất tại 0x1538088c8 (kích thước 300).
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1538088c8, kích thước 50.
-[allocate_at_address] Đã thực hiện cấp phát 50 bytes tại địa chỉ 0x1538088c8.
+[worstfit_malloc] Tìm thấy khối tệ nhất tại 0x1510082c8 (kích thước 300).
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1510082c8, kích thước 50.
+[allocate_at_address] Đã thực hiện cấp phát 50 bytes tại địa chỉ 0x1510082c8.
 
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 350 bytes
-Block 0: Start Addr: 0x153808800, Size: 100 bytes
-Block 1: Start Addr: 0x1538088fa, Size: 250 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008200, Size: 100 bytes
+Block 1: Start Addr: 0x1510082fa, Size: 250 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
-[worstfit_malloc] Tìm thấy khối tệ nhất tại 0x1538088fa (kích thước 250).
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1538088fa, kích thước 80.
-[allocate_at_address] Đã thực hiện cấp phát 80 bytes tại địa chỉ 0x1538088fa.
+[worstfit_malloc] Tìm thấy khối tệ nhất tại 0x1510082fa (kích thước 250).
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1510082fa, kích thước 80.
+[allocate_at_address] Đã thực hiện cấp phát 80 bytes tại địa chỉ 0x1510082fa.
 
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 430 bytes
-Block 0: Start Addr: 0x153808800, Size: 100 bytes
-Block 1: Start Addr: 0x15380894a, Size: 170 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008200, Size: 100 bytes
+Block 1: Start Addr: 0x15100834a, Size: 170 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
 
 --- Giải phóng các khối WF để reset trạng thái cho test tiếp theo ---
 
-[free_mem] Thực hiện giải 50 bytes tại địa chỉ 0x1538088c8.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1538088c8, kích thước 50. Bắt đầu gộp...
-[free_mem] Đã giải phóng 50 bytes tại địa chỉ 0x1538088c8.
+[free_mem] Thực hiện giải 50 bytes tại địa chỉ 0x1510082c8.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1510082c8, kích thước 50. Bắt đầu gộp...
+[free_mem] Đã giải phóng 50 bytes tại địa chỉ 0x1510082c8.
 
-[free_mem] Thực hiện giải 80 bytes tại địa chỉ 0x1538088fa.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1538088fa, kích thước 80. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x1538088c8 (kích thước 130) với khối tại 0x0.
-[merge_free_blocks] Đã gộp khối tại 0x1538088c8 (kích thước 300) với khối tại 0x0.
-[free_mem] Đã giải phóng 80 bytes tại địa chỉ 0x1538088fa.
+[free_mem] Thực hiện giải 80 bytes tại địa chỉ 0x1510082fa.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1510082fa, kích thước 80. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x1510082c8 (kích thước 130) với khối tại 0x0.
+[merge_free_blocks] Đã gộp khối tại 0x1510082c8 (kích thước 300) với khối tại 0x0.
+[free_mem] Đã giải phóng 80 bytes tại địa chỉ 0x1510082fa.
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 300 bytes
-Block 0: Start Addr: 0x153808800, Size: 100 bytes
-Block 1: Start Addr: 0x1538088c8, Size: 300 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008200, Size: 100 bytes
+Block 1: Start Addr: 0x1510082c8, Size: 300 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
 
 === Test Next Fit ===
-[nextfit_malloc] Tìm thấy khối phù hợp từ điểm cuối tại 0x153808800 (kích thước 100).
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x153808800, kích thước 70.
-[allocate_at_address] Đã thực hiện cấp phát 70 bytes tại địa chỉ 0x153808800.
+[nextfit_malloc] Tìm thấy khối phù hợp từ điểm cuối tại 0x151008200 (kích thước 100).
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x151008200, kích thước 70.
+[allocate_at_address] Đã thực hiện cấp phát 70 bytes tại địa chỉ 0x151008200.
 
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 370 bytes
-Block 0: Start Addr: 0x153808846, Size: 30 bytes
-Block 1: Start Addr: 0x1538088c8, Size: 300 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008246, Size: 30 bytes
+Block 1: Start Addr: 0x1510082c8, Size: 300 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
-[nextfit_malloc] Tìm thấy khối phù hợp từ điểm cuối tại 0x1538088c8 (kích thước 300).
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1538088c8, kích thước 40.
-[allocate_at_address] Đã thực hiện cấp phát 40 bytes tại địa chỉ 0x1538088c8.
+[nextfit_malloc] Tìm thấy khối phù hợp từ điểm cuối tại 0x1510082c8 (kích thước 300).
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1510082c8, kích thước 40.
+[allocate_at_address] Đã thực hiện cấp phát 40 bytes tại địa chỉ 0x1510082c8.
 
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 410 bytes
-Block 0: Start Addr: 0x153808846, Size: 30 bytes
-Block 1: Start Addr: 0x1538088f0, Size: 260 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008246, Size: 30 bytes
+Block 1: Start Addr: 0x1510082f0, Size: 260 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
-[nextfit_malloc] Tìm thấy khối phù hợp từ điểm cuối tại 0x1538088f0 (kích thước 260).
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1538088f0, kích thước 150.
-[allocate_at_address] Đã thực hiện cấp phát 150 bytes tại địa chỉ 0x1538088f0.
+[nextfit_malloc] Tìm thấy khối phù hợp từ điểm cuối tại 0x1510082f0 (kích thước 260).
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x1510082f0, kích thước 150.
+[allocate_at_address] Đã thực hiện cấp phát 150 bytes tại địa chỉ 0x1510082f0.
 
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 560 bytes
-Block 0: Start Addr: 0x153808846, Size: 30 bytes
-Block 1: Start Addr: 0x153808986, Size: 110 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008246, Size: 30 bytes
+Block 1: Start Addr: 0x151008386, Size: 110 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
-[nextfit_malloc] Tìm thấy khối phù hợp từ điểm cuối tại 0x153808986 (kích thước 110).
-[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x153808986, kích thước 100.
-[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x153808986.
+[nextfit_malloc] Tìm thấy khối phù hợp từ điểm cuối tại 0x151008386 (kích thước 110).
+[allocate_at_address] Thực hiện cấp phát bộ nhớ tại địa chỉ 0x151008386, kích thước 100.
+[allocate_at_address] Đã thực hiện cấp phát 100 bytes tại địa chỉ 0x151008386.
 
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 660 bytes
-Block 0: Start Addr: 0x153808846, Size: 30 bytes
-Block 1: Start Addr: 0x1538089ea, Size: 10 bytes
-Block 2: Start Addr: 0x153808a58, Size: 100 bytes
-Block 3: Start Addr: 0x153808b20, Size: 224 bytes
+Block 0: Start Addr: 0x151008246, Size: 30 bytes
+Block 1: Start Addr: 0x1510083ea, Size: 10 bytes
+Block 2: Start Addr: 0x151008458, Size: 100 bytes
+Block 3: Start Addr: 0x151008520, Size: 224 bytes
 ==============================================================
 
 
 --- Giải phóng tất cả các khối còn lại ---
 
-[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x153808864.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x153808864, kích thước 100. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x153808846 (kích thước 130) với khối tại 0x0.
-[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x153808864.
+[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x151008264.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x151008264, kích thước 100. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x151008246 (kích thước 130) với khối tại 0x0.
+[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x151008264.
 
-[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x1538089f4.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1538089f4, kích thước 100. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x1538089ea (kích thước 110) với khối tại 0x0.
-[merge_free_blocks] Đã gộp khối tại 0x1538089ea (kích thước 210) với khối tại 0x0.
-[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x1538089f4.
+[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x1510083f4.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1510083f4, kích thước 100. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x1510083ea (kích thước 110) với khối tại 0x0.
+[merge_free_blocks] Đã gộp khối tại 0x1510083ea (kích thước 210) với khối tại 0x0.
+[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x1510083f4.
 
-[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x153808abc.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x153808abc, kích thước 100. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x1538089ea (kích thước 310) với khối tại 0x0.
-[merge_free_blocks] Đã gộp khối tại 0x1538089ea (kích thước 534) với khối tại 0x0.
-[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x153808abc.
+[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x1510084bc.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1510084bc, kích thước 100. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x1510083ea (kích thước 310) với khối tại 0x0.
+[merge_free_blocks] Đã gộp khối tại 0x1510083ea (kích thước 534) với khối tại 0x0.
+[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x1510084bc.
 
-[free_mem] Thực hiện giải 70 bytes tại địa chỉ 0x153808800.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x153808800, kích thước 70. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x153808800 (kích thước 200) với khối tại 0x0.
-[free_mem] Đã giải phóng 70 bytes tại địa chỉ 0x153808800.
+[free_mem] Thực hiện giải 70 bytes tại địa chỉ 0x151008200.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x151008200, kích thước 70. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x151008200 (kích thước 200) với khối tại 0x0.
+[free_mem] Đã giải phóng 70 bytes tại địa chỉ 0x151008200.
 
-[free_mem] Thực hiện giải 40 bytes tại địa chỉ 0x1538088c8.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1538088c8, kích thước 40. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x153808800 (kích thước 240) với khối tại 0x0.
-[free_mem] Đã giải phóng 40 bytes tại địa chỉ 0x1538088c8.
+[free_mem] Thực hiện giải 40 bytes tại địa chỉ 0x1510082c8.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1510082c8, kích thước 40. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x151008200 (kích thước 240) với khối tại 0x0.
+[free_mem] Đã giải phóng 40 bytes tại địa chỉ 0x1510082c8.
 
-[free_mem] Thực hiện giải 150 bytes tại địa chỉ 0x1538088f0.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1538088f0, kích thước 150. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x153808800 (kích thước 390) với khối tại 0x0.
-[free_mem] Đã giải phóng 150 bytes tại địa chỉ 0x1538088f0.
+[free_mem] Thực hiện giải 150 bytes tại địa chỉ 0x1510082f0.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x1510082f0, kích thước 150. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x151008200 (kích thước 390) với khối tại 0x0.
+[free_mem] Đã giải phóng 150 bytes tại địa chỉ 0x1510082f0.
 
-[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x153808986.
-[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x153808986, kích thước 100. Bắt đầu gộp...
-[merge_free_blocks] Đã gộp khối tại 0x153808800 (kích thước 490) với khối tại 0x0.
-[merge_free_blocks] Đã gộp khối tại 0x153808800 (kích thước 1024) với khối tại 0x0.
-[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x153808986.
+[free_mem] Thực hiện giải 100 bytes tại địa chỉ 0x151008386.
+[add_free_mem_block] Đã thêm block mới tại địa chỉ 0x151008386, kích thước 100. Bắt đầu gộp...
+[merge_free_blocks] Đã gộp khối tại 0x151008200 (kích thước 490) với khối tại 0x0.
+[merge_free_blocks] Đã gộp khối tại 0x151008200 (kích thước 1024) với khối tại 0x0.
+[free_mem] Đã giải phóng 100 bytes tại địa chỉ 0x151008386.
 
 ================= Danh sách vùng trống dự do =================
 Kích thường vùng bộ nhớ quản lý: 1024 bytes, Đã cấp phát: 0 bytes
-Block 0: Start Addr: 0x153808800, Size: 1024 bytes
+Block 0: Start Addr: 0x151008200, Size: 1024 bytes
 ==============================================================
 
 [clean_memory_manager] Đã giải phóng vùng bộ nhớ ban đầu được quản lý.
+
+=== Test Buddy System ===
+[create_buddy_system] Đã khởi tạo buddy system với max_order = 10
+
+================= Danh sách free blocks trong buddy system =================
+Tổng kích thước bộ nhớ: 1024 bytes, Đã cấp phát: 0 bytes
+
+Order 0 (Size: 1 bytes):
+  Không có block nào
+
+Order 1 (Size: 2 bytes):
+  Không có block nào
+
+Order 2 (Size: 4 bytes):
+  Không có block nào
+
+Order 3 (Size: 8 bytes):
+  Không có block nào
+
+Order 4 (Size: 16 bytes):
+  Không có block nào
+
+Order 5 (Size: 32 bytes):
+  Không có block nào
+
+Order 6 (Size: 64 bytes):
+  Không có block nào
+
+Order 7 (Size: 128 bytes):
+  Không có block nào
+
+Order 8 (Size: 256 bytes):
+  Không có block nào
+
+Order 9 (Size: 512 bytes):
+  Không có block nào
+
+Order 10 (Size: 1024 bytes):
+  Block 0: Start Addr: 0x151008200, Size: 1024 bytes
+=======================================================================
+
+
+--- Test cấp phát các khối có kích thước khác nhau ---
+[split_block] Đã tách block tại 0x151008200 thành hai buddies kích thước 512
+[split_block] Đã tách block tại 0x151008200 thành hai buddies kích thước 256
+[split_block] Đã tách block tại 0x151008200 thành hai buddies kích thước 128
+[split_block] Đã tách block tại 0x151008200 thành hai buddies kích thước 64
+[buddy_malloc] Đã cấp phát 64 bytes tại địa chỉ 0x151008200
+[buddy_malloc] Đã cấp phát 128 bytes tại địa chỉ 0x151008280
+[buddy_malloc] Đã cấp phát 256 bytes tại địa chỉ 0x151008300
+
+================= Danh sách free blocks trong buddy system =================
+Tổng kích thước bộ nhớ: 1024 bytes, Đã cấp phát: 448 bytes
+
+Order 0 (Size: 1 bytes):
+  Không có block nào
+
+Order 1 (Size: 2 bytes):
+  Không có block nào
+
+Order 2 (Size: 4 bytes):
+  Không có block nào
+
+Order 3 (Size: 8 bytes):
+  Không có block nào
+
+Order 4 (Size: 16 bytes):
+  Không có block nào
+
+Order 5 (Size: 32 bytes):
+  Không có block nào
+
+Order 6 (Size: 64 bytes):
+  Block 0: Start Addr: 0x151008240, Size: 64 bytes
+
+Order 7 (Size: 128 bytes):
+  Block 0: Start Addr: 0x151008280, Size: 128 bytes
+
+Order 8 (Size: 256 bytes):
+  Block 0: Start Addr: 0x151008300, Size: 256 bytes
+
+Order 9 (Size: 512 bytes):
+  Block 0: Start Addr: 0x151008400, Size: 512 bytes
+
+Order 10 (Size: 1024 bytes):
+  Block 0: Start Addr: 0x151008200, Size: 64 bytes
+=======================================================================
+
+
+--- Test giải phóng và hợp nhất ---
+[buddy_free] Lỗi: Không tìm thấy block tại địa chỉ 0x151008200
+[buddy_free] Đã giải phóng block tại 0x151008280 kích thước 128
+
+================= Danh sách free blocks trong buddy system =================
+Tổng kích thước bộ nhớ: 1024 bytes, Đã cấp phát: 320 bytes
+
+Order 0 (Size: 1 bytes):
+  Không có block nào
+
+Order 1 (Size: 2 bytes):
+  Không có block nào
+
+Order 2 (Size: 4 bytes):
+  Không có block nào
+
+Order 3 (Size: 8 bytes):
+  Không có block nào
+
+Order 4 (Size: 16 bytes):
+  Không có block nào
+
+Order 5 (Size: 32 bytes):
+  Không có block nào
+
+Order 6 (Size: 64 bytes):
+  Block 0: Start Addr: 0x151008240, Size: 64 bytes
+
+Order 7 (Size: 128 bytes):
+  Block 0: Start Addr: 0x151008280, Size: 128 bytes
+
+Order 8 (Size: 256 bytes):
+  Block 0: Start Addr: 0x151008300, Size: 256 bytes
+
+Order 9 (Size: 512 bytes):
+  Block 0: Start Addr: 0x151008400, Size: 512 bytes
+
+Order 10 (Size: 1024 bytes):
+  Block 0: Start Addr: 0x151008200, Size: 64 bytes
+=======================================================================
+
+
+--- Test cấp phát lại sau khi giải phóng ---
+[buddy_malloc] Đã cấp phát 256 bytes tại địa chỉ 0x151008300
+
+================= Danh sách free blocks trong buddy system =================
+Tổng kích thước bộ nhớ: 1024 bytes, Đã cấp phát: 576 bytes
+
+Order 0 (Size: 1 bytes):
+  Không có block nào
+
+Order 1 (Size: 2 bytes):
+  Không có block nào
+
+Order 2 (Size: 4 bytes):
+  Không có block nào
+
+Order 3 (Size: 8 bytes):
+  Không có block nào
+
+Order 4 (Size: 16 bytes):
+  Không có block nào
+
+Order 5 (Size: 32 bytes):
+  Không có block nào
+
+Order 6 (Size: 64 bytes):
+  Block 0: Start Addr: 0x151008240, Size: 64 bytes
+
+Order 7 (Size: 128 bytes):
+  Block 0: Start Addr: 0x151008280, Size: 128 bytes
+
+Order 8 (Size: 256 bytes):
+  Block 0: Start Addr: 0x151008300, Size: 256 bytes
+
+Order 9 (Size: 512 bytes):
+  Block 0: Start Addr: 0x151008400, Size: 512 bytes
+
+Order 10 (Size: 1024 bytes):
+  Block 0: Start Addr: 0x151008200, Size: 64 bytes
+=======================================================================
+
+
+--- Giải phóng tất cả các khối buddy ---
+[buddy_free] Đã giải phóng block tại 0x151008300 kích thước 256
+[buddy_free] Đã giải phóng block tại 0x151008300 kích thước 256
+
+================= Danh sách free blocks trong buddy system =================
+Tổng kích thước bộ nhớ: 1024 bytes, Đã cấp phát: 64 bytes
+
+Order 0 (Size: 1 bytes):
+  Không có block nào
+
+Order 1 (Size: 2 bytes):
+  Không có block nào
+
+Order 2 (Size: 4 bytes):
+  Không có block nào
+
+Order 3 (Size: 8 bytes):
+  Không có block nào
+
+Order 4 (Size: 16 bytes):
+  Không có block nào
+
+Order 5 (Size: 32 bytes):
+  Không có block nào
+
+Order 6 (Size: 64 bytes):
+  Block 0: Start Addr: 0x151008240, Size: 64 bytes
+
+Order 7 (Size: 128 bytes):
+  Block 0: Start Addr: 0x151008280, Size: 128 bytes
+
+Order 8 (Size: 256 bytes):
+  Block 0: Start Addr: 0x151008300, Size: 256 bytes
+
+Order 9 (Size: 512 bytes):
+  Block 0: Start Addr: 0x151008400, Size: 512 bytes
+
+Order 10 (Size: 1024 bytes):
+  Block 0: Start Addr: 0x151008200, Size: 64 bytes
+=======================================================================
+

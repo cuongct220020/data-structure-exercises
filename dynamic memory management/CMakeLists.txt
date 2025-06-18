@@ -8,6 +8,7 @@ include_directories(include)
 set(SOURCES
     src/main.c
     src/mem_alloc.c
+    src/buddy_alloc.c
 )
 
 # Tạo executable

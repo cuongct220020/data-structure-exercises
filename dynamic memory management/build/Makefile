@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management"
+CMAKE_SOURCE_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/dynamic memory management"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build"
+CMAKE_BINARY_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/dynamic memory management/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/dynamic memory management/build/CMakeFiles" "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/dynamic memory management/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/dynamic memory management/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ memory_management: cmake_check_build_system
 memory_management/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/build
 .PHONY : memory_management/fast
+
+src/buddy_alloc.o: src/buddy_alloc.c.o
+.PHONY : src/buddy_alloc.o
+
+# target to build an object file
+src/buddy_alloc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/buddy_alloc.c.o
+.PHONY : src/buddy_alloc.c.o
+
+src/buddy_alloc.i: src/buddy_alloc.c.i
+.PHONY : src/buddy_alloc.i
+
+# target to preprocess a source file
+src/buddy_alloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/buddy_alloc.c.i
+.PHONY : src/buddy_alloc.c.i
+
+src/buddy_alloc.s: src/buddy_alloc.c.s
+.PHONY : src/buddy_alloc.s
+
+# target to generate assembly for a file
+src/buddy_alloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/buddy_alloc.c.s
+.PHONY : src/buddy_alloc.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... memory_management"
+	@echo "... src/buddy_alloc.o"
+	@echo "... src/buddy_alloc.i"
+	@echo "... src/buddy_alloc.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

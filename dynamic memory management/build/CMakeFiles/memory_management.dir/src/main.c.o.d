@@ -1,5 +1,5 @@
 CMakeFiles/memory_management.dir/src/main.c.o: \
-  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/memory\ management/src/main.c \
+  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/dynamic\ memory\ management/src/main.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_bounds.h \
@@ -95,4 +95,5 @@ CMakeFiles/memory_management.dir/src/main.c.o: \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_max_align_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_offsetof.h \
-  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/memory\ management/include/mem_alloc.h
+  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/dynamic\ memory\ management/include/mem_alloc.h \
+  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/dynamic\ memory\ management/include/buddy_alloc.h

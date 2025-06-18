@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stddef.h> 
 #include "mem_alloc.h"
-
+#include "buddy_alloc.h"
 
 int main() {
     FILE *logfile = fopen("../output/output.txt", "w");
@@ -114,7 +114,59 @@ int main() {
 
     print_free_list(global_mem_manager, logfile);
 
+    // Cleanup cho MemoryManagement
     cleanup_memory_manager(global_mem_manager, logfile);
+
+    // Test Buddy System
+    fprintf(logfile, "\n=== Test Buddy System ===\n");
+    
+    // Tạo vùng nhớ mới cho buddy system
+    void *buddy_memory_pool = malloc(pool_size);
+    if (buddy_memory_pool == NULL) {
+        fprintf(logfile, "[main] Lỗi: Không thể cấp phát vùng nhớ cho buddy system.\n");
+        fclose(logfile);
+        return 1;
+    }
+
+    // Khởi tạo buddy system
+    BuddySystem* buddy_system = create_buddy_system(buddy_memory_pool, pool_size, logfile);
+    if (buddy_system == NULL) {
+        fprintf(logfile, "[main] Lỗi: Không thể khởi tạo buddy system.\n");
+        free(buddy_memory_pool);
+        fclose(logfile);
+        return 1;
+    }
+
+    print_buddy_free_lists(buddy_system, logfile);
+
+    // Test cấp phát các khối có kích thước khác nhau
+    fprintf(logfile, "\n--- Test cấp phát các khối có kích thước khác nhau ---\n");
+    void *buddy_alloc1 = buddy_malloc(buddy_system, 64, logfile);  // 2^6
+    void *buddy_alloc2 = buddy_malloc(buddy_system, 128, logfile); // 2^7
+    void *buddy_alloc3 = buddy_malloc(buddy_system, 256, logfile); // 2^8
+    print_buddy_free_lists(buddy_system, logfile);
+
+    // Test giải phóng và hợp nhất
+    fprintf(logfile, "\n--- Test giải phóng và hợp nhất ---\n");
+    buddy_free(buddy_system, buddy_alloc1, 64, logfile);
+    buddy_free(buddy_system, buddy_alloc2, 128, logfile);
+    print_buddy_free_lists(buddy_system, logfile);
+
+    // Test cấp phát lại sau khi giải phóng
+    fprintf(logfile, "\n--- Test cấp phát lại sau khi giải phóng ---\n");
+    void *buddy_alloc4 = buddy_malloc(buddy_system, 192, logfile); // 2^7 + 2^6
+    print_buddy_free_lists(buddy_system, logfile);
+
+    // Giải phóng tất cả
+    fprintf(logfile, "\n--- Giải phóng tất cả các khối buddy ---\n");
+    buddy_free(buddy_system, buddy_alloc3, 256, logfile);
+    buddy_free(buddy_system, buddy_alloc4, 192, logfile);
+    print_buddy_free_lists(buddy_system, logfile);
+
+    // Cleanup cho buddy system
+    cleanup_buddy_system(buddy_system, logfile);
+    free(buddy_memory_pool);
+
     fclose(logfile);
     return 0;
 }
