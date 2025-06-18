@@ -8,7 +8,6 @@ include_directories(include)
 set(SOURCES
     src/main.c
     src/scopetree.c
-    src/helper.c
 )
 
 # Tạo executable

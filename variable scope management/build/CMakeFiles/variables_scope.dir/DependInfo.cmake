@@ -8,9 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variables scope/src/helper.c" "CMakeFiles/variables_scope.dir/src/helper.c.o" "gcc" "CMakeFiles/variables_scope.dir/src/helper.c.o.d"
-  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variables scope/src/main.c" "CMakeFiles/variables_scope.dir/src/main.c.o" "gcc" "CMakeFiles/variables_scope.dir/src/main.c.o.d"
-  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variables scope/src/scopetree.c" "CMakeFiles/variables_scope.dir/src/scopetree.c.o" "gcc" "CMakeFiles/variables_scope.dir/src/scopetree.c.o.d"
+  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variable scope management/src/main.c" "CMakeFiles/variables_scope.dir/src/main.c.o" "gcc" "CMakeFiles/variables_scope.dir/src/main.c.o.d"
+  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variable scope management/src/scopetree.c" "CMakeFiles/variables_scope.dir/src/scopetree.c.o" "gcc" "CMakeFiles/variables_scope.dir/src/scopetree.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

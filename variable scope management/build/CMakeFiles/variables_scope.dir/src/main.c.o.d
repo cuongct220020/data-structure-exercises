@@ -1,5 +1,5 @@
 CMakeFiles/variables_scope.dir/src/main.c.o: \
-  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variables\ scope/src/main.c \
+  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variable\ scope\ management/src/main.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_bounds.h \
@@ -96,5 +96,4 @@ CMakeFiles/variables_scope.dir/src/main.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/runetype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_wint_t.h \
-  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variables\ scope/include/scopetree.h \
-  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variables\ scope/include/helper.h
+  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variable\ scope\ management/include/scopetree.h

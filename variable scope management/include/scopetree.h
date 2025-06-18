@@ -27,24 +27,18 @@ typedef struct Scope {
     struct Scope* parent;
 } Scope;
 
-// Tạo biến mới
-Variable* create_variable(const char *type, const char* name, const char* value);
 
-// Tạo phạm vi mới
-Scope* create_scope(Scope *parent_scope, ScopeType scope_type, const char* scope_name);
+Variable* create_variable(const char* type, const char* name, const char* value);
 
-// Thêm biến vào phạm vi hiện tại
 void add_variable_to_current_scope(Scope* current_scope, Variable* new_var);
-
-// Hàm tìm biến trong phạm vi hiện tại
 Variable* find_variable_in_current_scope(Scope* scope, const char* var_name);
 
-// Hàm phát hiện lỗi phạm vi (undefined variable). Trả về 1 nếu biến không được định nghĩa, 0 nếu ngược lại
+Scope* create_scope(Scope* parent_scope, ScopeType scope_type, const char* scope_name);
 int is_undefined_variable(Scope* current_scope, const char* var_name);
-
-// Hàm phát hiện shadowing (biến bị che khuất). Kiểm tra tất cả các biến trong phạm vi 'current_scope' và trong phạm vi cha. 
 void is_shadowing(Scope* current_scope);
 
-// In ra cấu trúc cây phạm vi của biến.
 void print_scope_tree(Scope* scope, int level);
+
+void free_variable(Variable* var);
+
 

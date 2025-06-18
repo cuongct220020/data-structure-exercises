@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/variables_scope.dir/src/helper.c.o"
-  "CMakeFiles/variables_scope.dir/src/helper.c.o.d"
   "CMakeFiles/variables_scope.dir/src/main.c.o"
   "CMakeFiles/variables_scope.dir/src/main.c.o.d"
   "CMakeFiles/variables_scope.dir/src/scopetree.c.o"

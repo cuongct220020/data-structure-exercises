@@ -1,5 +1,5 @@
 CMakeFiles/variables_scope.dir/src/scopetree.c.o: \
-  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variables\ scope/src/scopetree.c \
+  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variable\ scope\ management/src/scopetree.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_bounds.h \
@@ -85,12 +85,11 @@ CMakeFiles/variables_scope.dir/src/scopetree.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_abort.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_mode_t.h \
-  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variables\ scope/include/scopetree.h \
+  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variable\ scope\ management/include/scopetree.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_errno_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/secure/_strings.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/secure/_string.h \
-  /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/variables\ scope/include/helper.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/secure/_string.h

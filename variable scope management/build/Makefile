@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variables scope"
+CMAKE_SOURCE_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variable scope management"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variables scope/build"
+CMAKE_BINARY_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variable scope management/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variables scope/build/CMakeFiles" "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variables scope/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variable scope management/build/CMakeFiles" "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variable scope management/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variables scope/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/variable scope management/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -128,30 +128,6 @@ variables_scope: cmake_check_build_system
 variables_scope/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables_scope.dir/build.make CMakeFiles/variables_scope.dir/build
 .PHONY : variables_scope/fast
-
-src/helper.o: src/helper.c.o
-.PHONY : src/helper.o
-
-# target to build an object file
-src/helper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables_scope.dir/build.make CMakeFiles/variables_scope.dir/src/helper.c.o
-.PHONY : src/helper.c.o
-
-src/helper.i: src/helper.c.i
-.PHONY : src/helper.i
-
-# target to preprocess a source file
-src/helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables_scope.dir/build.make CMakeFiles/variables_scope.dir/src/helper.c.i
-.PHONY : src/helper.c.i
-
-src/helper.s: src/helper.c.s
-.PHONY : src/helper.s
-
-# target to generate assembly for a file
-src/helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/variables_scope.dir/build.make CMakeFiles/variables_scope.dir/src/helper.c.s
-.PHONY : src/helper.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -210,9 +186,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... variables_scope"
-	@echo "... src/helper.o"
-	@echo "... src/helper.i"
-	@echo "... src/helper.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
