@@ -1,0 +1,24 @@
+Bag of Words (BoW) là một mô hình biểu diễn văn bản dưới dạng tập hợp các từ (tokens), bỏ qua ngữ pháp và thứ tự từ, nhưng giữ lại tần suất xuất hiện của từng từ. Nó biến một câu/văn bản thành một vector đặc trưng số học, rất phù hợp cho mô hình học máy.
+
+Ý tưởng chính: 
+    1. Xây dựng một từ vựng (vocabulary) từ toàn bộ tập văn bản. 
+    2. Với mỗi văn bản: 
+        + Đếm số lần xuất hiện của từng từ trong từ vựng. 
+        + Biểu diễn kết quả dưới dạng vector (vector độ dài = kích thước từ vựng).
+
+Tiền xử lý các file văn bản:
+    1. Loại bỏ HTML, metadata, tag ảnh, link, script
+    2. Chuyển văn bản thành chữ thường
+    3. Tách từ (tokenization)
+    4. Loại bỏ các từ vô nghĩa (stop words)
+    5. Lọc bỏ các token không cần thiết (lọc một cách thủ công nếu có thể)
+
+
+# Phân cụm một folder
+./text_clustering data/afamily_vn
+
+# Phân cụm nhiều folder
+./text_clustering data/afamily_vn data/vnexpress_vn
+
+# Với tham số tùy chỉnh
+./text_clustering --shingle-size 6 --num-hashes 200 --threshold 0.5 data/afamily_vn

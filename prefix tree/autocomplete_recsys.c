@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdbool.h>
 
+
+// Khi làm cần đăng nhập lại vào tài khoản google gmail cuong.dt220020
 #define ALPHABET_SIZE 26
 #define MAX_WORD_LENGTH 100
 #define MAX_SUGGESTIONS 10

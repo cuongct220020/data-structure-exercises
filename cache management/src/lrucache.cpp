@@ -19,10 +19,16 @@ typedef struct LRUCache {
 } LRUCache;
 
 // Hàm khởi tạo LRU Cache
-LRUCache* initCache(int capacity);
+LRUCache* initCache(int capacity) {
+    
+}
 
 // Hàm tìm kiếm 1 khoá và khoá đó tồn tại, phần tử tương ứng sẽ được di chuyển về đầu
-void getCache(int key);
+void getCache(int key) {
 
-void putCache(int key);
+}
+
+void putCache(int key) {
+
+}
 
