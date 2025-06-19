@@ -3,11 +3,11 @@
 #include <string.h>
 #include <stdbool.h>
 
+//Link tải file words_alpha.txt: https://github.com/dwyl/english-words/blob/master/words_alpha.txt
 
-// Khi làm cần đăng nhập lại vào tài khoản google gmail cuong.dt220020
 #define ALPHABET_SIZE 26
 #define MAX_WORD_LENGTH 100
-#define MAX_SUGGESTIONS 10
+#define MAX_SUGGESTIONS 20
 
 // Prefix Tree (Trie) node structure
 typedef struct TrieNode {
@@ -19,12 +19,15 @@ typedef struct TrieNode {
 // Function to create a new Trie node
 TrieNode* createNode() {
     TrieNode* node = (TrieNode*)malloc(sizeof(TrieNode));
-    if (node) {
-        node->isEndOfWord = false;
-        node->frequency = 0;
-        for (int i = 0; i < ALPHABET_SIZE; i++) {
-            node->children[i] = NULL;
-        }
+    if (node == NULL) {
+        printf("Dynamic Allocation Error.\n");
+        return NULL;
+    }
+
+    node->isEndOfWord = false;
+    node->frequency = 0;
+    for (int i = 0; i < ALPHABET_SIZE; i++) {
+        node->children[i] = NULL;
     }
     return node;
 }
@@ -138,7 +141,7 @@ void freeTrie(TrieNode* root) {
     free(root);
 }
 
-// Display suggestions
+// Hiển thị gợi ý
 void displaySuggestions(const char* prefix, char suggestions[][MAX_WORD_LENGTH], int count) {
     if (count == 0) {
         printf("Không tìm thấy từ nào với tiền tố '%s'\n", prefix);
@@ -152,32 +155,38 @@ void displaySuggestions(const char* prefix, char suggestions[][MAX_WORD_LENGTH],
     printf("\n");
 }
 
-// Load words from predefined list (simulating file input)
-void loadSampleWords(TrieNode* root) {
-    const char* words[] = {
-        "apple", "application", "apply", "appreciate", "approach",
-        "banana", "band", "bank", "basic", "battle",
-        "cat", "car", "card", "care", "carry", "case",
-        "dog", "door", "down", "draw", "dream",
-        "elephant", "energy", "engine", "enjoy", "enter",
-        "fire", "first", "fish", "flag", "flower",
-        "good", "great", "green", "group", "grow",
-        "happy", "hard", "head", "heart", "help", "home",
-        "ice", "idea", "image", "important", "include",
-        "just", "jump", "join", "job", "journey"
-    };
-    
-    int numWords = sizeof(words) / sizeof(words[0]);
-    
-    printf("Đang tải %d từ vào hệ thống...\n", numWords);
-    for (int i = 0; i < numWords; i++) {
-        insert(root, words[i]);
+// --- Hàm chính cần bạn hoàn thiện ---
+void loadWordsFromFile(TrieNode* root, const char* filename) {
+    FILE* file = fopen(filename, "r");
+    if (file == NULL) {
+        perror("Không thể mở file words.txt");
+        return;
     }
-    printf("Hoàn thành việc tải từ điển!\n\n");
+
+    char buffer[256]; // Buffer tạm thời để đọc từng dòng từ file
+    int wordCount = 0;
+
+    printf("Đang tải từ từ file '%s' vào hệ thống...\n", filename);
+
+    while (fgets(buffer, sizeof(buffer), file) != NULL) {
+        // Loại bỏ ký tự xuống dòng ('\n') nếu có
+        buffer[strcspn(buffer, "\n")] = 0;
+
+        // Chỉ chèn từ nếu nó không rỗng sau khi loại bỏ ký tự xuống dòng
+        if (strlen(buffer) > 0) {
+            // Chèn từ vào cây Trie
+            insert(root, buffer);
+            wordCount++;
+        }
+    }
+
+    fclose(file); // Đóng file
+    printf("Hoàn thành việc tải %d từ từ file '%s'!\n\n", wordCount, filename);
 }
 
 int main() {
     TrieNode* root = createNode();
+    if (root == NULL) return 0;
     char prefix[MAX_WORD_LENGTH];
     char suggestions[MAX_SUGGESTIONS][MAX_WORD_LENGTH];
     
@@ -185,7 +194,7 @@ int main() {
     printf("Sử dụng cấu trúc dữ liệu Prefix Tree (Trie)\n\n");
     
     // Load sample words
-    loadSampleWords(root);
+    loadWordsFromFile(root, "data/autocomplete_recsys/words_alpha.txt");
     
     printf("Hướng dẫn sử dụng:\n");
     printf("- Nhập tiền tố để tìm gợi ý (ít nhất 1 ký tự)\n");
