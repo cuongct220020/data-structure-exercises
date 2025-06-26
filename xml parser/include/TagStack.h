@@ -31,5 +31,3 @@ int is_empty(TagStack* stack);
 
 // Giải phóng toàn bộ stack
 void free_stack(TagStack* stack);
-
-

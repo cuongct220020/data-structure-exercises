@@ -134,8 +134,8 @@ void findClosestWords(const char* misspelled_word, int misspelled_word_len,
             // Tính toán khoảng cách chỉnh sửa cho hàng DP mới
             for (int j = 1; j <= misspelled_word_len; j++) {
                 int cost = (misspelled_word[j-1] == ('a' + i)) ? 0 : 1;
-                next_dp_row[j] = min(min(current_dp_row[j] + 1, // Xóa (từ gốc dài hơn)
-                                      next_dp_row[j-1] + 1), // Thêm (từ Trie dài hơn)
+                next_dp_row[j] = min(min(current_dp_row[j] + 1, // Xóa 
+                                      next_dp_row[j-1] + 1), // Thêm 
                                       current_dp_row[j-1] + cost); // Thay thế hoặc khớp
             }
 
