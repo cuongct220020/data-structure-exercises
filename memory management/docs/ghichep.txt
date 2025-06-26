@@ -1,0 +1,23 @@
+I. Các chiến lược First Fit, Best Fit, Worst Fit, Next Fit là các chiến lược được thường được dùng trong quản lý bộ nhớ của hệ điều hành, giúp hệ điều hành tìm và cấp phát vùng trống tự do hiệu quả đối với mỗi yêu cầu của tiến trình. 
+    
+    1. Chiến lược quản lý vùng trống tự do (cách cài đặt free_list): Danh sách vùng trống được xếp theo thứ tự tăng dần của địa chỉ để thuận lợi cho thao tác hợp nhất (coalescing) 02 vùng trống tự do. 
+    
+    --> Quy tắc: Nếu địa chỉ bắt đầu của vùng trống hiện tại + kích thước vùng trống hiện tại = địa chỉ bắt đầu của cùng trống kế tiếp thì giải phóng vùng trống kế tiếp, điều chỉnh trường kích thước vùng trống hiện tại. 
+
+    2. Các chiến lược First Fit, Best Fit, Worst Fit, Next Fit
+        + First Fit: Duyệt qua danh sách vùng trống tự do, trả về vùng trống tự do đầu tiên fit với yêu cầu. Thao tác duyệt O(n)
+        + Best Fit: Duyệt qua danh sách vùng trống tự do, trả về vùng trống tự do đầu tiên fit nhất với yêu cầu. Vùng trống này thường có kích thước nhỏ nhất so với các vùng trống có thể đáp ứng. Thao tác duyệt O(n)
+        + Worst Fit: Duyệt qua danh sách vùng trống tự do, trả về vùng trống tự do đầu tiên fit nhẹ nhất với yêu cầu. Vùng trống này thường có kích thước lớn nhất so với các vùng trống có thể đáp ứng. Thao tác duyệt O(n)
+        + Next Fit: Bắt đầu duyệt từ khối nhớ đã được cấp phát từ lần cấp phát trước đó. Nếu duyệt đến cuối vùng nhớ thì sẽ quay vòng cho đến khi quay lại điểm bắt đầu. Thao tác duyệt O(n)
+
+II. Buddy System - Memory Allocation
+    1. Buddy System là một thuật toán cấp phát bộ nhớ động, trong đó bộ nhớ được chia thành các khối có kích thước là luỹ thừa của 2. 
+    
+    2. Quy tắc cấp phát bộ nhớ (allocation): Hệ thống tìm kiếm danh sách trống chứa khối có kích thước nhỏ nhất nhưng đủ lớn cho yêu cầu. 
+        + Nếu không tìm thấy khối nào có kích thước phù hợp trực tiếp, hệ thống sẽ lấy một khối lớn hơn từ danh sách trống tiếp theo (kích thước gấp đôi) và chia nó thành hai khối con bằng nhau.
+        + Quá trình chia đôi này tiếp tục lặp lại cho đến khi tìm được một khối có kích thước phù hợp nhất cho yêu cầu, hoặc cho đến khi đạt đến kích thước khối nhỏ nhất có thể (thường là một trang bộ nhớ).
+    
+    3. Quy tắc giải phóng và hợp nhất (deallocation): Khi một khối được giải phóng thì: 
+        + Khối bộ nhớ được giải phóng được trả về danh sách trống tương ứng với kích thước của nó.
+        + Nếu hai buddy đều trống thì tiến hành hợp nhất lại thành một khối lớn hơn gấp đôi và được chuyển lên danh sách trống của kích thước lớn hơn.
+        + Quá trình hợp nhất này có thể tiếp tục lặp lại cho đến khi không còn cặp "buddies" nào có thể hợp nhất được nữa, hoặc cho đến khi đạt đến khối bộ nhớ ban đầu lớn nhất.

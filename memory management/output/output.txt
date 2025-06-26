@@ -1,0 +1,99 @@
+=== Test Buddy System ===
+[create_buddy_system] Đã khởi tạo buddy system
+================== Buddy System Free Blocks ==================
+Total memory: 1024 KB | Allocated: 0 KB | Max level: 10
+
+Free block | Start: 0x152009200 | Size: 1024 KB | Level: 0
+===============================================================
+
+--- A = 70KB ---
+
+================== Buddy System Free Blocks ==================
+Total memory: 1024 KB | Allocated: 70 KB | Max level: 10
+
+Free block | Start: 0x152009280 | Size: 128 KB | Level: 3
+Free block | Start: 0x152009300 | Size: 256 KB | Level: 2
+Free block | Start: 0x152009400 | Size: 512 KB | Level: 1
+===============================================================
+
+--- B = 35KB ---
+
+================== Buddy System Free Blocks ==================
+Total memory: 1024 KB | Allocated: 105 KB | Max level: 10
+
+Free block | Start: 0x1520092c0 | Size: 64 KB | Level: 4
+Free block | Start: 0x152009300 | Size: 256 KB | Level: 2
+Free block | Start: 0x152009400 | Size: 512 KB | Level: 1
+===============================================================
+
+--- C = 80KB ---
+
+================== Buddy System Free Blocks ==================
+Total memory: 1024 KB | Allocated: 185 KB | Max level: 10
+
+Free block | Start: 0x1520092c0 | Size: 64 KB | Level: 4
+Free block | Start: 0x152009380 | Size: 128 KB | Level: 3
+Free block | Start: 0x152009400 | Size: 512 KB | Level: 1
+===============================================================
+
+--- A ends ---
+[buddy_free] Đã đánh dấu block size 128 tại địa chỉ 0x152009200 là tự do.
+[merge_buddies] Gộp thành công block size 256 tại level 2
+[merge_buddies] Gộp thành công block size 512 tại level 1
+[merge_buddies] Gộp thành công block size 1024 tại level 0
+[merge_buddies] Khối yêu cầu hiện tại không tồn tại hoặc khối hiện tại không có cha.
+
+================== Buddy System Free Blocks ==================
+Total memory: 1024 KB | Allocated: 57 KB | Max level: 10
+
+Free block | Start: 0x152009200 | Size: 1024 KB | Level: 0
+===============================================================
+
+--- D = 60KB ---
+
+================== Buddy System Free Blocks ==================
+Total memory: 1024 KB | Allocated: 117 KB | Max level: 10
+
+Free block | Start: 0x152009240 | Size: 64 KB | Level: 4
+Free block | Start: 0x152009280 | Size: 128 KB | Level: 3
+Free block | Start: 0x152009300 | Size: 256 KB | Level: 2
+Free block | Start: 0x152009400 | Size: 512 KB | Level: 1
+===============================================================
+
+--- B ends ---
+[buddy_free] Đã đánh dấu block size 64 tại địa chỉ 0x152009280 là tự do.
+
+================== Buddy System Free Blocks ==================
+Total memory: 1024 KB | Allocated: 53 KB | Max level: 10
+
+Free block | Start: 0x152009240 | Size: 64 KB | Level: 4
+Free block | Start: 0x152009280 | Size: 128 KB | Level: 3
+Free block | Start: 0x152009300 | Size: 256 KB | Level: 2
+Free block | Start: 0x152009400 | Size: 512 KB | Level: 1
+===============================================================
+
+--- D ends ---
+[buddy_free] Đã đánh dấu block size 64 tại địa chỉ 0x152009200 là tự do.
+[merge_buddies] Gộp thành công block size 128 tại level 3
+[merge_buddies] Gộp thành công block size 256 tại level 2
+[merge_buddies] Gộp thành công block size 512 tại level 1
+[merge_buddies] Gộp thành công block size 1024 tại level 0
+[merge_buddies] Khối yêu cầu hiện tại không tồn tại hoặc khối hiện tại không có cha.
+
+================== Buddy System Free Blocks ==================
+Total memory: 1024 KB | Allocated: 18446744073709551605 KB | Max level: 10
+
+Free block | Start: 0x152009200 | Size: 1024 KB | Level: 0
+===============================================================
+
+--- C ends ---
+[buddy_free] Đã đánh dấu block size 128 tại địa chỉ 0x152009300 là tự do.
+
+================== Buddy System Free Blocks ==================
+Total memory: 1024 KB | Allocated: 18446744073709551477 KB | Max level: 10
+
+Free block | Start: 0x152009200 | Size: 1024 KB | Level: 0
+===============================================================
+[cleanup_buddy_system] Đã giải phóng toàn bộ bộ nhớ của Buddy System.
+
+=== Kết thúc demo ===

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stddef.h": "c",
+        "mem_alloc.h": "c",
+        "stdlib.h": "c"
+    }
+}
