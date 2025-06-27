@@ -54,20 +54,20 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management"
+CMAKE_SOURCE_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build"
+CMAKE_BINARY_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/memory_management.dir/all
+all: CMakeFiles/user_session_management.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/memory_management.dir/codegen
+codegen: CMakeFiles/user_session_management.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/memory_management.dir/clean
+clean: CMakeFiles/user_session_management.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/memory_management.dir
+# Target rules for target CMakeFiles/user_session_management.dir
 
 # All Build rule for target.
-CMakeFiles/memory_management.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" --progress-num=1,2,3,4 "Built target memory_management"
-.PHONY : CMakeFiles/memory_management.dir/all
+CMakeFiles/user_session_management.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build/CMakeFiles" --progress-num=1,2,3 "Built target user_session_management"
+.PHONY : CMakeFiles/user_session_management.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/memory_management.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/memory_management.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" 0
-.PHONY : CMakeFiles/memory_management.dir/rule
+CMakeFiles/user_session_management.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build/CMakeFiles" 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/user_session_management.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build/CMakeFiles" 0
+.PHONY : CMakeFiles/user_session_management.dir/rule
 
 # Convenience name for target.
-memory_management: CMakeFiles/memory_management.dir/rule
-.PHONY : memory_management
+user_session_management: CMakeFiles/user_session_management.dir/rule
+.PHONY : user_session_management
 
 # codegen rule for target.
-CMakeFiles/memory_management.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" --progress-num=1,2,3,4 "Finished codegen for target memory_management"
-.PHONY : CMakeFiles/memory_management.dir/codegen
+CMakeFiles/user_session_management.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build/CMakeFiles" --progress-num=1,2,3 "Finished codegen for target user_session_management"
+.PHONY : CMakeFiles/user_session_management.dir/codegen
 
 # clean rule for target.
-CMakeFiles/memory_management.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/clean
-.PHONY : CMakeFiles/memory_management.dir/clean
+CMakeFiles/user_session_management.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/clean
+.PHONY : CMakeFiles/user_session_management.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

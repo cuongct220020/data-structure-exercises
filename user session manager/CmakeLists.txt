@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.10)
+project(user_session_management VERSION 0.1.0 LANGUAGES C CXX)
+
+# Thêm thư mục chứa file header
+include_directories(include)
+
+# Thêm các file nguồn
+set(SOURCES 
+    src/main.cpp
+    src/session_manager.cpp
+)
+
+# Tạo executable
+add_executable(user_session_management ${SOURCES})
+
+# Thiết lập chuẩn C++17 cho các file C++
+target_compile_features(user_session_management PRIVATE cxx_std_17)

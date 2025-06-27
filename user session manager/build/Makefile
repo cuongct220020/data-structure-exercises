@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management"
+CMAKE_SOURCE_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build"
+CMAKE_BINARY_DIR = "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build/CMakeFiles" "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -117,89 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named memory_management
+# Target rules for targets named user_session_management
 
 # Build rule for target.
-memory_management: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memory_management
-.PHONY : memory_management
+user_session_management: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user_session_management
+.PHONY : user_session_management
 
 # fast build rule for target.
-memory_management/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/build
-.PHONY : memory_management/fast
+user_session_management/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/build
+.PHONY : user_session_management/fast
 
-src/buddy_alloc.o: src/buddy_alloc.c.o
-.PHONY : src/buddy_alloc.o
-
-# target to build an object file
-src/buddy_alloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/buddy_alloc.c.o
-.PHONY : src/buddy_alloc.c.o
-
-src/buddy_alloc.i: src/buddy_alloc.c.i
-.PHONY : src/buddy_alloc.i
-
-# target to preprocess a source file
-src/buddy_alloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/buddy_alloc.c.i
-.PHONY : src/buddy_alloc.c.i
-
-src/buddy_alloc.s: src/buddy_alloc.c.s
-.PHONY : src/buddy_alloc.s
-
-# target to generate assembly for a file
-src/buddy_alloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/buddy_alloc.c.s
-.PHONY : src/buddy_alloc.c.s
-
-src/main.o: src/main.c.o
+src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
-src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/main.c.o
-.PHONY : src/main.c.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/main.i: src/main.c.i
+src/main.i: src/main.cpp.i
 .PHONY : src/main.i
 
 # target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/main.c.i
-.PHONY : src/main.c.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/main.s: src/main.c.s
+src/main.s: src/main.cpp.s
 .PHONY : src/main.s
 
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/main.c.s
-.PHONY : src/main.c.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-src/mem_alloc.o: src/mem_alloc.c.o
-.PHONY : src/mem_alloc.o
+src/session_manager.o: src/session_manager.cpp.o
+.PHONY : src/session_manager.o
 
 # target to build an object file
-src/mem_alloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/mem_alloc.c.o
-.PHONY : src/mem_alloc.c.o
+src/session_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/src/session_manager.cpp.o
+.PHONY : src/session_manager.cpp.o
 
-src/mem_alloc.i: src/mem_alloc.c.i
-.PHONY : src/mem_alloc.i
+src/session_manager.i: src/session_manager.cpp.i
+.PHONY : src/session_manager.i
 
 # target to preprocess a source file
-src/mem_alloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/mem_alloc.c.i
-.PHONY : src/mem_alloc.c.i
+src/session_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/src/session_manager.cpp.i
+.PHONY : src/session_manager.cpp.i
 
-src/mem_alloc.s: src/mem_alloc.c.s
-.PHONY : src/mem_alloc.s
+src/session_manager.s: src/session_manager.cpp.s
+.PHONY : src/session_manager.s
 
 # target to generate assembly for a file
-src/mem_alloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/memory_management.dir/build.make CMakeFiles/memory_management.dir/src/mem_alloc.c.s
-.PHONY : src/mem_alloc.c.s
+src/session_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/user_session_management.dir/build.make CMakeFiles/user_session_management.dir/src/session_manager.cpp.s
+.PHONY : src/session_manager.cpp.s
 
 # Help Target
 help:
@@ -209,16 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... memory_management"
-	@echo "... src/buddy_alloc.o"
-	@echo "... src/buddy_alloc.i"
-	@echo "... src/buddy_alloc.s"
+	@echo "... user_session_management"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/mem_alloc.o"
-	@echo "... src/mem_alloc.i"
-	@echo "... src/mem_alloc.s"
+	@echo "... src/session_manager.o"
+	@echo "... src/session_manager.i"
+	@echo "... src/session_manager.s"
 .PHONY : help
 
 

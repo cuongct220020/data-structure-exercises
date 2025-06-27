@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/buddy_alloc.c" "CMakeFiles/memory_management.dir/src/buddy_alloc.c.o" "gcc" "CMakeFiles/memory_management.dir/src/buddy_alloc.c.o.d"
-  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/main.c" "CMakeFiles/memory_management.dir/src/main.c.o" "gcc" "CMakeFiles/memory_management.dir/src/main.c.o.d"
-  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/mem_alloc.c" "CMakeFiles/memory_management.dir/src/mem_alloc.c.o" "gcc" "CMakeFiles/memory_management.dir/src/mem_alloc.c.o.d"
+  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/buddy_alloc.c" "CMakeFiles/memory_management.dir/src/buddy_alloc.c.o" "gcc" "CMakeFiles/memory_management.dir/src/buddy_alloc.c.o.d"
+  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/main.c" "CMakeFiles/memory_management.dir/src/main.c.o" "gcc" "CMakeFiles/memory_management.dir/src/main.c.o.d"
+  "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/mem_alloc.c" "CMakeFiles/memory_management.dir/src/mem_alloc.c.o" "gcc" "CMakeFiles/memory_management.dir/src/mem_alloc.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

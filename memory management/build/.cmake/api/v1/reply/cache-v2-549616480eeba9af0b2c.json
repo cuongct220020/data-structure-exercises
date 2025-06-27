@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/cuongct090_04/Code/IT3011-DSA-Ky\u0300 2024.2/project/memory management/build"
+			"value" : "/Users/cuongct090_04/Code/IT3011-DSA-K\u1ef3 2024.2/project/memory management/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -411,7 +411,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/cuongct090_04/Code/IT3011-DSA-Ky\u0300 2024.2/project/memory management/build/CMakeFiles/pkgRedirects"
+			"value" : "/Users/cuongct090_04/Code/IT3011-DSA-K\u1ef3 2024.2/project/memory management/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -1123,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/cuongct090_04/Code/IT3011-DSA-Ky\u0300 2024.2/project/memory management/build"
+			"value" : "/Users/cuongct090_04/Code/IT3011-DSA-K\u1ef3 2024.2/project/memory management/build"
 		},
 		{
 			"name" : "memory_management_IS_TOP_LEVEL",
@@ -1147,7 +1147,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/cuongct090_04/Code/IT3011-DSA-Ky\u0300 2024.2/project/memory management"
+			"value" : "/Users/cuongct090_04/Code/IT3011-DSA-K\u1ef3 2024.2/project/memory management"
 		}
 	],
 	"kind" : "cache",
