@@ -180,6 +180,7 @@ BuddyBlock* buddy_malloc(BuddySystem *system, size_t request_size, FILE *out) {
 
     
     allocated_block->is_free = 0;
+    allocated_block->actual_allocated_size = request_size;
     system->allocated_memory_size += request_size;
     
     return allocated_block;
@@ -222,7 +223,7 @@ void free_buddy(BuddySystem *system, BuddyBlock* request_block, FILE *out) {
     }
 
     request_block->is_free = 1;
-    system->allocated_memory_size -= request_block->size;
+    system->allocated_memory_size -= request_block->actual_allocated_size;
     fprintf(out, "[buddy_free] Đã đánh dấu block size %zu tại địa chỉ %p là tự do.\n",
             request_block->size, request_block->start_addr);
 

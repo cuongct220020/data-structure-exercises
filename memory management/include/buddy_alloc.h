@@ -9,6 +9,7 @@ typedef struct BuddyBlock {
     size_t size;
     int is_free;
     int level; // Giữ thông tin mức của buddy (log2(size))
+    size_t actual_allocated_size;
 
     struct BuddyBlock* parent;
     struct BuddyBlock* leftChild;

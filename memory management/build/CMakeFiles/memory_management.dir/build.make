@@ -76,43 +76,43 @@ CMakeFiles/memory_management.dir/src/main.c.o: CMakeFiles/memory_management.dir/
 CMakeFiles/memory_management.dir/src/main.c.o: /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/memory\ management/src/main.c
 CMakeFiles/memory_management.dir/src/main.c.o: CMakeFiles/memory_management.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/memory_management.dir/src/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/memory_management.dir/src/main.c.o -MF CMakeFiles/memory_management.dir/src/main.c.o.d -o CMakeFiles/memory_management.dir/src/main.c.o -c "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/main.c"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/memory_management.dir/src/main.c.o -MF CMakeFiles/memory_management.dir/src/main.c.o.d -o CMakeFiles/memory_management.dir/src/main.c.o -c "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/main.c"
 
 CMakeFiles/memory_management.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/memory_management.dir/src/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/main.c" > CMakeFiles/memory_management.dir/src/main.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/main.c" > CMakeFiles/memory_management.dir/src/main.c.i
 
 CMakeFiles/memory_management.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/memory_management.dir/src/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/main.c" -o CMakeFiles/memory_management.dir/src/main.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/main.c" -o CMakeFiles/memory_management.dir/src/main.c.s
 
 CMakeFiles/memory_management.dir/src/mem_alloc.c.o: CMakeFiles/memory_management.dir/flags.make
 CMakeFiles/memory_management.dir/src/mem_alloc.c.o: /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/memory\ management/src/mem_alloc.c
 CMakeFiles/memory_management.dir/src/mem_alloc.c.o: CMakeFiles/memory_management.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/memory_management.dir/src/mem_alloc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/memory_management.dir/src/mem_alloc.c.o -MF CMakeFiles/memory_management.dir/src/mem_alloc.c.o.d -o CMakeFiles/memory_management.dir/src/mem_alloc.c.o -c "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/mem_alloc.c"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/memory_management.dir/src/mem_alloc.c.o -MF CMakeFiles/memory_management.dir/src/mem_alloc.c.o.d -o CMakeFiles/memory_management.dir/src/mem_alloc.c.o -c "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/mem_alloc.c"
 
 CMakeFiles/memory_management.dir/src/mem_alloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/memory_management.dir/src/mem_alloc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/mem_alloc.c" > CMakeFiles/memory_management.dir/src/mem_alloc.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/mem_alloc.c" > CMakeFiles/memory_management.dir/src/mem_alloc.c.i
 
 CMakeFiles/memory_management.dir/src/mem_alloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/memory_management.dir/src/mem_alloc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/mem_alloc.c" -o CMakeFiles/memory_management.dir/src/mem_alloc.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/mem_alloc.c" -o CMakeFiles/memory_management.dir/src/mem_alloc.c.s
 
 CMakeFiles/memory_management.dir/src/buddy_alloc.c.o: CMakeFiles/memory_management.dir/flags.make
 CMakeFiles/memory_management.dir/src/buddy_alloc.c.o: /Users/cuongct090_04/Code/IT3011-DSA-Kỳ\ 2024.2/project/memory\ management/src/buddy_alloc.c
 CMakeFiles/memory_management.dir/src/buddy_alloc.c.o: CMakeFiles/memory_management.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/memory_management.dir/src/buddy_alloc.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/memory_management.dir/src/buddy_alloc.c.o -MF CMakeFiles/memory_management.dir/src/buddy_alloc.c.o.d -o CMakeFiles/memory_management.dir/src/buddy_alloc.c.o -c "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/buddy_alloc.c"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/memory_management.dir/src/buddy_alloc.c.o -MF CMakeFiles/memory_management.dir/src/buddy_alloc.c.o.d -o CMakeFiles/memory_management.dir/src/buddy_alloc.c.o -c "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/buddy_alloc.c"
 
 CMakeFiles/memory_management.dir/src/buddy_alloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/memory_management.dir/src/buddy_alloc.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/buddy_alloc.c" > CMakeFiles/memory_management.dir/src/buddy_alloc.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/buddy_alloc.c" > CMakeFiles/memory_management.dir/src/buddy_alloc.c.i
 
 CMakeFiles/memory_management.dir/src/buddy_alloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/memory_management.dir/src/buddy_alloc.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/buddy_alloc.c" -o CMakeFiles/memory_management.dir/src/buddy_alloc.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/memory management/src/buddy_alloc.c" -o CMakeFiles/memory_management.dir/src/buddy_alloc.c.s
 
 # Object files for target memory_management
 memory_management_OBJECTS = \
