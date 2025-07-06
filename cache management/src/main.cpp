@@ -61,11 +61,33 @@ int main() {
         std::cout << "Before eviction:" << std::endl;
         mfu_cache->printCache();
 
-        // This should evict the least frequently used item
+        // This should evict the most frequently used item (22 with freq=4)
         mfu_cache->put(23, "value23", CacheStrategy::MFU);
 
         std::cout << "After eviction:" << std::endl;
         mfu_cache->printCache();
+
+        // Test MFU with equal frequencies
+        std::cout << "\n--- Testing MFU with Equal Frequencies ---" << std::endl;
+        auto mfu_cache2 = std::make_unique<Cache>(2);
+        
+        mfu_cache2->put(30, "value30", CacheStrategy::MFU);
+        mfu_cache2->put(31, "value31", CacheStrategy::MFU);
+        
+        // Access both items the same number of times
+        mfu_cache2->get(30);
+        mfu_cache2->get(31);
+        mfu_cache2->get(30);
+        mfu_cache2->get(31);
+        
+        std::cout << "Before eviction (equal frequencies):" << std::endl;
+        mfu_cache2->printCache();
+        
+        // Should evict the one that was accessed first (older timestamp)
+        mfu_cache2->put(32, "value32", CacheStrategy::MFU);
+        
+        std::cout << "After eviction (equal frequencies):" << std::endl;
+        mfu_cache2->printCache();
 
         // Test error handling
         std::cout << "\n--- Testing Error Handling ---" << std::endl;

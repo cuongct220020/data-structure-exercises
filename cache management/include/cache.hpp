@@ -37,22 +37,11 @@ public:
     ~Node() = default;
 };
 
-// Comparator for priority_queue (max-heap for MFU)
-struct CompareMFU {
-    bool operator()(const std::shared_ptr<Node>& a, const std::shared_ptr<Node>& b) const {
-        if (a->frequency == b->frequency) {
-            return a->timestamp > b->timestamp; // Smaller timestamp has higher priority
-        }
-        return a->frequency < b->frequency; // Higher frequency has higher priority
-    }
-};
-
 // Main Cache class
 class Cache {
 private:
     int capacity_;
     int size_;
-    std::priority_queue<std::shared_ptr<Node>, std::vector<std::shared_ptr<Node>>, CompareMFU> pq_;
     std::unordered_map<int, std::shared_ptr<Node>> cacheMap_;
     std::shared_ptr<Node> head_;
     std::shared_ptr<Node> tail_;

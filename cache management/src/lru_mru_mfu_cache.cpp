@@ -84,26 +84,29 @@ std::string Cache::get(int key) {
     // Move node to MRU position
     moveNodeToHead(node);
     
-    // Update priority queue
-    pq_.push(node);
-    
     return node->value;
 }
 
 // Get MFU victim for eviction
 std::shared_ptr<Node> Cache::getMFUVictim() {
-    while (!pq_.empty()) {
-        auto top = pq_.top();
-        pq_.pop();
-        
-        // Check if this node is still valid in the cache
-        auto it = cacheMap_.find(top->key);
-        if (it != cacheMap_.end() && it->second == top) {
-            return top;
+    std::shared_ptr<Node> victim = nullptr;
+    int maxFreq = -1;
+    
+    // Find the node with the highest frequency
+    for (const auto& pair : cacheMap_) {
+        auto node = pair.second;
+        if (node && node->frequency > maxFreq) {
+            maxFreq = node->frequency;
+            victim = node;
+        } else if (node && node->frequency == maxFreq && victim) {
+            // If frequencies are equal, choose the one with older timestamp (FIFO tie-break)
+            if (node->timestamp < victim->timestamp) {
+                victim = node;
+            }
         }
-        // Node is no longer valid, continue to next
     }
-    return nullptr;
+    
+    return victim;
 }
 
 // Put operation
@@ -128,7 +131,6 @@ void Cache::put(int key, const std::string& value, CacheStrategy strategy) {
         node->timestamp = std::chrono::steady_clock::now();
         
         moveNodeToHead(node);
-        pq_.push(node);
     } else {
         // Key doesn't exist - need to add new node
         if (size_ == capacity_) {
@@ -162,7 +164,6 @@ void Cache::put(int key, const std::string& value, CacheStrategy strategy) {
         
         addNodeToHead(newNode);
         cacheMap_[key] = newNode;
-        pq_.push(newNode);
         size_++;
     }
 }
@@ -170,9 +171,6 @@ void Cache::put(int key, const std::string& value, CacheStrategy strategy) {
 // Clear cache
 void Cache::clear() {
     cacheMap_.clear();
-    while (!pq_.empty()) {
-        pq_.pop();
-    }
     head_ = nullptr;
     tail_ = nullptr;
     size_ = 0;
