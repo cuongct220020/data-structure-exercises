@@ -34,11 +34,11 @@ struct OnlineUserNode : public RBNode<OnlineUserNode> {
     long lastActiveTime;
     std::string activityInfo;
 
-    // Cây R-B quản lý các phiên đăng nhập của người dùng của người dùng
-    SessionNode* sessionRoot;
+    // // Cây R-B quản lý các phiên đăng nhập của người dùng của người dùng
+    // SessionNode* sessionRoot;
 
-    // Bản đồ ánh xạ người dùng đến cây R-B quản lý toàn bộ phiên đăng nhập
-    std::unordered_map<std::string, SessionNode*> userToSessionsMap; // key = userID
+    // // Bản đồ ánh xạ người dùng đến cây R-B quản lý toàn bộ phiên đăng nhập
+    // std::unordered_map<std::string, SessionNode*> userToSessionsMap; // key = userID
     std::string get_key() const { return userID; }
 };
 
@@ -288,7 +288,7 @@ void inorder_traversal(const Node* root, Func func) {
 }
 
 
-// ===== Các ham quản lý phiên đăng nhập và người dùng online ===== //
+// ===== Các hàm quản lý phiên đăng nhập và người dùng online ===== //
 bool is_user_has_any_session(OnlineUserNode*& root, const std::string& userId);
 
 bool is_valid_session(SessionNode*& root, const std::string& sessionId, const std::string& userId, long currentTime, FILE *out);

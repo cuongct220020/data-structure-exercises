@@ -155,32 +155,31 @@ void delete_online_user(OnlineUserNode*& root, const std::string& userId, FILE *
 }
 
 // Hàm xoá tất cả session của một người dùng nếu người dùng logout khỏi toàn bộ thiết bị
-// void delete_all_sessions_of_user(SessionNode*& root, const std::string& userId, FILE *out) {
-//     if (root == nullptr) {
-//         fprintf(out, "[delete_all_sessions_of_user] Cây rỗng, không thể xóa session.\n");
-//         return;
-//     }
+void delete_all_sessions_of_user(SessionNode*& root, const std::string& userId, FILE *out) {
+    if (root == nullptr) {
+        fprintf(out, "[delete_all_sessions_of_user] Cây rỗng, không thể xóa session.\n");
+        return;
+    }
 
-//     // Duyệt qua cây và xóa tất cả session của người dùng
-//     SessionNode* current = root;
-//     while (current) {
-//         if (current->userID == userId) {
-//             SessionNode* deleted_node = current;
-//             current = current->right;  // Di chuyển sang phải để tiếp tục tìm kiếm
-//             delete_session(root, deleted_node->sessionID, userId, out);
-//         } else if (userId > current->userID) {
-//             current = current->right;  // Di chuyển sang phải
-//         } else {
-//             current = current->left;   // Di chuyển sang trái
-//         }
-//     }
-// }
-
-// Hàm xoá tất cả session của một người dùng nếu người dùng logout khỏi toàn bộ thiết bị
-void delete_all_sessions_of_user(const std::string& userId, FILE *out) {
-    // Khối quản lý toàn bộ session của user
-    
+    // Duyệt qua cây và xóa tất cả session của người dùng
+    SessionNode* current = root;
+    while (current) {
+        if (current->userID == userId) {
+            SessionNode* deleted_node = current;
+            current = current->right;  // Di chuyển sang phải để tiếp tục tìm kiếm
+            delete_session(root, deleted_node->sessionID, userId, out);
+        } else if (userId > current->userID) {
+            current = current->right;  // Di chuyển sang phải
+        } else {
+            current = current->left;   // Di chuyển sang trái
+        }
+    }
 }
+
+// // Hàm xoá tất cả session của một người dùng nếu người dùng logout khỏi toàn bộ thiết bị sử dụng bảng băm
+// void delete_all_sessions_of_user(const std::string& userId, FILE *out) {
+//     // Khối quản lý toàn bộ session của user
+// }
 
 // Hàm in ra session đang hoạt động, dùng kết hợp với inorder_traversal
 void print_active_session_node(SessionNode* node, FILE* out) {
