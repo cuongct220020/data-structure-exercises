@@ -1,3 +1,0 @@
-/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build/CMakeFiles/user_session_management.dir
-/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build/CMakeFiles/edit_cache.dir
-/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/user session manager/build/CMakeFiles/rebuild_cache.dir

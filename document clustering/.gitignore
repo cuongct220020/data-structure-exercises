@@ -1,0 +1,11 @@
+# .vscode setings
+.vscode/setings
+
+# build folders
+build/
+
+# data folders
+data/
+
+# stopwords
+stopwords/

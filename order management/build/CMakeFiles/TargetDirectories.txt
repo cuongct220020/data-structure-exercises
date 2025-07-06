@@ -1,3 +1,0 @@
-/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/order management/build/CMakeFiles/order_management.dir
-/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/order management/build/CMakeFiles/edit_cache.dir
-/Users/cuongct090_04/Code/IT3011-DSA-Kỳ 2024.2/project/order management/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,10 @@
+Bộ nhớ Cache là bộ nhớ giới hạn về dung lượng lưu trữ, tuy nhiên truy cập rất nhanh, nhanh hơn nhiều hơn so với bộ nhớ vật lý (RAM) thông thường. Có các chiến lược quản lý bộ nhớ Cache sau: 
+    + Least-Recently Used Cache: Lựa chọn nạn nhân là cache được sử dụng ở lần cách xa nhất.
+    + Most-Recently Used Cache: Lựa chọn nạn nhân là cache được sử dụng ở lần gần nhất. 
+    + Most-Frequently Used Cache: Lựa chọn nạn nhân là cache được sử dụng với tần suất lớn nhất. Nếu hai nạn nahan 
+
+Cài đặt LRUCache sử dụng: Danh sách liên kết đôi và bảng băm.
+    + Sử dụng danh sách liên kết đôi giúp quản lý thứ tự dễ dàng hơn, thông thường duyệt danh sách liên kết đơn thì thao tác vào cỡ O(n), danh sách liên kết đôi sẽ khắc phục vấn đề này bằng.
+
+Cơ chế chung: Với mỗi request, nếu là:
+    + Cache Hit: 
