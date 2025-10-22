@@ -1,24 +1,59 @@
-# IT3011-Data-Structure-Exercises
+# IT3011 - Data Structure Exercises
 
-* **Ex1 - order management:** Using singly linked list to build business logic for order management application.
+Practical implementations of common data structures (linked lists, trees, hash tables) applied to real-world problems using **C/C++** and **CMake**.
 
-* **Ex2 - xml parser:** Using tree data structure simulates the process of building an XML tree. Also apply the stack data structure for the tag matching operation.
+## 📋 Exercises
 
-* **Ex3 - memory management:** Using singly linked list simulates the way the operating system manages free space by applying first fit, best fit, next fit, worst fit strategies.
+| # | Topic | Data Structure | Description |
+|---|-------|----------------|-------------|
+| 1 | Order Management | Singly Linked List | Business logic for order processing |
+| 2 | XML Parser | Tree & Stack | Build XML tree and validate tags |
+| 3 | Memory Management | Singly Linked List | OS memory allocation (First/Best/Next/Worst Fit) |
+| 4 | Cache Management | Doubly Linked List & Hash Table | LRU, MRU, MFU algorithms |
+| 5 | Prefix Tree | Trie | Spell checker and autocomplete |
+| 6 | Variable Scope | Tree | Compiler scope validation |
+| 7 | Document Clustering | MinHash + LSH | Find similar documents |
+| 8 | User Session | Red-Black Tree | Web server session management |
 
-* **Ex4 - cache management:** Use Doubly Linked List and Hash Table to simulate how cache management algorithms like: LRU, MRU, MFU work.
+## 🚀 Quick Start
 
-* **Ex5 - prefix tree:** Use the Trie (Prefix Tree) data structure to build two programs that simulate how a spell checker and an autocomplete suggestion system work.
+### Prerequisites
+- Git
+- CMake (3.10+)
+- C/C++ Compiler (GCC/Clang/MSVC)
 
-* **Ex6 - variable scope management:** Using the tree data structure simulates the behavior of the compiler. From there, build a scope tree structure, identify and check the validity of variables in the program.
+### Build & Run
 
-* **Ex7 - document clustering:** Using MinHash + Locality Sensitive Hash (LSH) technique to solve the document clustering problem. 
+```bash
+# Clone repository
+git clone https://github.com/cuongct220020/data-structure-exercises.git
+cd data-structure-exercises
 
-* **Ex8 - user session management:** Using Red-Black Tree data structure simulates the operation of web server in managing user sessions when they log in on different devices.
+# Choose and run any exercise (example: ex1)
+cd ex1-order-management
+mkdir build && cd build
+cmake .. && cmake --build .
+./main
+```
 
+### Build Template
+Replace `exN-exercise-name` with any exercise folder:
 
+```bash
+cd exN-exercise-name
+mkdir build && cd build
+cmake .. && cmake --build .
+./main
+```
 
+## 🧹 Clean Build
 
+```bash
+rm -rf build
+```
 
+## 📝 License
+Educational purpose - IT3011 Course
 
-
+## 👨‍💻 Author
+[@cuongct220020](https://github.com/cuongct220020)
