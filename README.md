@@ -1,4 +1,5 @@
-# IT3011 - Data Structure Exercises
+# Data Structure Exercises
+> **IT3011 - Data Structures & Algorithm - Hanoi University of Science and Technology**
 
 Practical implementations of common data structures (linked lists, trees, hash tables) applied to real-world problems using **C/C++** and **CMake**.
 
